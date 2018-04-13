@@ -42,11 +42,6 @@
 				o.worldNormal = mul(v.normal,_World2Object);
 				o.worldPos = mul(_Object2World,v.vertex).xyz;
 				return o;
-
-
-				
-				return o;
-
 			}
 
 			fixed4 frag(v2f i) :SV_TARGET
