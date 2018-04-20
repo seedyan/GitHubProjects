@@ -75,6 +75,7 @@
 				fixed3 tangentLightDir = normalize(i.lightDir);
 				fixed3 tangentViewDir = normalize(i.viewDir);
 				//用tex2d对法线纹理_BumpMap进行采样，法线纹理中存储的是吧法线经过映射之后得到的像素值[0,1]
+				//如果我们没有在unity中把该纹理的类型设置成Normal map ,则需要我们手动进行反映射。
 				fixed4 packedNormal = tex2D(_BumpMap,i.uv.zw);
 				fixed3 tangentNormal;
 
