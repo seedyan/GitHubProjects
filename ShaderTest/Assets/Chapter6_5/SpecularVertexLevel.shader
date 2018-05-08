@@ -44,8 +44,7 @@
 				fixed3 worldLight = normalize(_WorldSpaceLightPos0.xyz);
 				//漫反射 光的颜色和强度 * 漫反射系数 * max（表面法线 · 入射光线）
 				fixed3 diffuse = _LightColor0.rgb * _Diffuse * saturate(dot(worldNormal,worldLight));
-
-
+				
 				fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
 
 				//入射光线关于平面发现的反射方向，reflect第一个参数 光的方向是光源指向交点

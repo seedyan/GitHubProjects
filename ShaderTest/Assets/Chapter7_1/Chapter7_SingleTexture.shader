@@ -32,8 +32,8 @@
 		};
 
 		struct v2f {
-			float4 pos:SV_POSITION;
-			float3 worldNormal: TEXCOORD0;
+			float4 pos : SV_POSITION;
+			float3 worldNormal : TEXCOORD0;
 			float3 worldPos : TEXCOORD1;
 			//存储纹理坐标的变量
 			float2 uv : TEXCOORD2;

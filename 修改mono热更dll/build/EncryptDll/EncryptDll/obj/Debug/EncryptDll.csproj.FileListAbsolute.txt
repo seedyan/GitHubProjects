@@ -1,6 +1,0 @@
-D:\MyWork\CSharp\EncryptDll\EncryptDll\bin\Debug\EncryptDll.exe.config
-D:\MyWork\CSharp\EncryptDll\EncryptDll\obj\Debug\EncryptDll.csprojResolveAssemblyReference.cache
-D:\MyWork\CSharp\EncryptDll\EncryptDll\bin\Debug\EncryptDll.exe
-D:\MyWork\CSharp\EncryptDll\EncryptDll\bin\Debug\EncryptDll.pdb
-D:\MyWork\CSharp\EncryptDll\EncryptDll\obj\Debug\EncryptDll.exe
-D:\MyWork\CSharp\EncryptDll\EncryptDll\obj\Debug\EncryptDll.pdb

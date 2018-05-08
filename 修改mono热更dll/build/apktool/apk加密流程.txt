@@ -1,6 +1,0 @@
-1.把打出来的apk包放到apktool目录下
-cmd 运行指令apktool d -s -f C:\apktool\xx.apk -o C:\apktool\xx
-2.，将 apk 文件解包（默认解包到当前目录下的同名文件夹下）
-3.把解压出来的dll加密（dll放到C:\Users\Seedyan\Desktop\dll加密工具\EncryptDll\EncryptDll\bin\Release，点击.bat xxx_Encrypt.dll就是加密过的），然后原路放回---->加密的dll放到\StreamingAssets下，资源热更
-4.在test1文件夹下，用apktool.yml替换当前的。 cmd 运行指令apktool b app -o test2.apk（app 指需要打包的文件夹，-o other.apk 表示生产新文件），重新打包 apk
-5.签名jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore debug.keystore -storepass android test2.apk androiddebugkey

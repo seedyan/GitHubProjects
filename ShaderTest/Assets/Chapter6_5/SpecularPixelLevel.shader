@@ -37,16 +37,10 @@
 				v2f o;
 				//把定点位置从模型空间转换到裁剪空间
 				o.pos = mul(UNITY_MATRIX_MVP,v.vertex);
-				
 				//转到法线从模型空间到世界空间。  转换法线需要逆转置矩阵，这里使用逆矩阵+改变mul的位置来实现
 				o.worldNormal = mul(v.normal,_World2Object);
 				o.worldPos = mul(_Object2World,v.vertex).xyz;
 				return o;
-
-
-				
-				return o;
-
 			}
 
 			fixed4 frag(v2f i) :SV_TARGET
@@ -58,8 +52,6 @@
 				fixed3 worldNormal = normalize(i.worldNormal);
 				//漫反射 光的颜色和强度 * 漫反射系数 * max（表面法线 · 入射光线）
 				fixed3 diffuse = _LightColor0.rgb * _Diffuse * saturate(dot(worldNormal,worldLight));
-
-
 				//视角方向 通过世界坐标下摄像机的坐标-顶点位置从模型空间变换成世界空间
 				fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - i.worldPos);
 				fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
