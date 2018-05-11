@@ -37,7 +37,6 @@
 				v2f o;
 				//把定点位置从模型空间转换到裁剪空间
 				o.pos = mul(UNITY_MATRIX_MVP,v.vertex);
-				
 				//转到法线从模型空间到世界空间。  转换法线需要逆转置矩阵，这里使用逆矩阵+改变mul的位置来实现
 				o.worldNormal = mul(v.normal,_World2Object);
 				o.worldPos = mul(_Object2World,v.vertex).xyz;
