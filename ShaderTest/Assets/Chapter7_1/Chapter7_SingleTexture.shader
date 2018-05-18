@@ -49,6 +49,7 @@
 			o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
 			//和上面的操作一致
 			//o.uv = TRANSFORM_TEX(v.texcoord,_MainTex);
+			//o.uv = v.texcoord;
 			return o;
 		}
 
